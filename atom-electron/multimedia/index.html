@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Electron Multimedia Prototype</title>
+</head>
+<body>
+    <video id="my-video" width="320" height="240" controls>
+        <source src="video/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <br /><br />
+    <button onclick="playVideo()">Play</button>
+    <button onclick="pauseVideo()">Pause</button>
+    <br />
+    <audio id="my-audio" controls>
+        <source src="music/Fabrizio%20Paterlini.mp3" type="audio/mpeg">
+    </audio>
+    <br /><br />
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <script>
+        var audio = document.getElementById('my-audio');
+        function playAudio() {
+            audio.play();
+        }
+        function pauseAudio() {
+            audio.pause();
+        }
+        var video = document.getElementById('my-video');
+        function playVideo() {
+            video.play();
+        }
+        function pauseVideo() {
+            video.pause();
+        }
+    </script>
+</body>
+</html>

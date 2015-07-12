@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>NW.js Canvas Prototype</title>
+</head>
+<body>
+    <canvas id="my-canvas" width="300" height="300"></canvas>
+    <script>
+        var canvas = document.getElementById('my-canvas');
+        var context = canvas.getContext("2d");
+        var posX = 10, posY = 10;
+        setInterval(function() {
+            if (posX <= canvas.width - (10 + 50)) {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.fillRect(posX, posY, 50, 50);
+                posX++;
+                posY++;
+            }
+        }, 50)
+    </script>
+</body>
+</html>
+
+

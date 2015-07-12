@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electron REST Prototype</title>
+</head>
+<body>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        var root = 'http://jsonplaceholder.typicode.com';
+        $.ajax({
+            url: root + '/posts',
+            method: 'GET'
+        }).then(function(data) {
+            var p = document.getElementById('data');
+            p.innerHTML += '<br/><br/>' + 'Received ' + data.length + ' Objects';
+            p.innerHTML += '<br/> Connection with REST backend successful';
+        });
+    </script>
+    <p id="data">Testing communication with REST backend</p>
+</body>
+</html>
+
+
+
+
+
+
+

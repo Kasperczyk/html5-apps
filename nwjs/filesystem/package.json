@@ -1,0 +1,9 @@
+{
+  "name": "nw-filesystem-prototype",
+  "main": "index.html",
+  "window": {
+    "toolbar": false
+  }
+}
+
+

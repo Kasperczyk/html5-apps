@@ -1,0 +1,9 @@
+{
+  "name": "nw-system-tray-prototype",
+  "main": "index.html",
+  "window": {
+    "toolbar": false
+  }
+}
+
+

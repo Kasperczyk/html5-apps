@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NW.js WebStorage Prototype</title>
+</head>
+<body>
+    <script>
+        function checkStorageSupport() {
+            //sessionStorage
+            if (window.sessionStorage) {
+                alert('This browser supports sessionStorage');
+            } else {
+                alert('This browser does NOT support sessionStorage');
+            }
+
+            //localStorage
+            if (window.localStorage) {
+                alert('This browser supports localStorage');
+            } else {
+                alert('This browser does NOT support localStorage');
+            }
+        }
+        checkStorageSupport();
+        localStorage.setItem('key', {firstName: 'Rene', lastName: 'Kasperczyk'});
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,7 @@
+{
+  "name": "nwjs-multimedia-prototype",
+  "main": "index.html",
+  "window": {
+    "toolbar": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "nwjs-canvas-prototype",
+  "main": "index.html",
+  "window": {
+    "toolbar": false
+  }
+}

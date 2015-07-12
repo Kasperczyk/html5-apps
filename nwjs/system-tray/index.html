@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NW.js System Tray Prototype</title>
+</head>
+<body>
+    <script>
+        var gui = require('nw.gui');
+        var tray = new gui.Tray({
+            icon: 'icon.png'
+        });
+        tray.menu = new gui.Menu();
+        tray.menu.append(new gui.MenuItem({label: 'Open'}));
+        tray.menu.append(new gui.MenuItem({label: 'Exit'}));
+        tray.tooltip = 'I am the tray icon of a NW.js app';
+
+    </script>
+</body>
+</html>
+
+
+

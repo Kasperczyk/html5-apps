@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NW.js File System Prototype</title>
+</head>
+<body>
+    <script>
+        document.querySelector('#openDialog')
+                .addEventListener("change", function() {
+                    var filePath = this.value;
+                    alert(filePath);
+                });
+    </script>
+    Open a file
+    <input id="openDialog" type="file">
+    <br /><br />
+    Save a file
+    <input id="saveDialog" type="file" nwsaveas="defaultFileName.txt"/>
+</body>
+</html>
+
+
+
+

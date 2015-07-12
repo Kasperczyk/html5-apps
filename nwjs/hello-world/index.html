@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NW.js Hello World Prototype</title>
+</head>
+<body>
+    <script>
+        var markdown = require("markdown").markdown,
+            div = document.createElement("div"),
+            content = "#Hello World!\n + We are using **io.js** version *" +
+                            process.version + "*";
+        div.innerHTML = markdown.toHTML(content);
+        document.body.appendChild(div);
+    </script>
+</body>
+</html>
+
+
